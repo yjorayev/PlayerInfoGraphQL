@@ -12,19 +12,19 @@
 
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
+PlayerInfoGQL/[Dd]ebug/
+PlayerInfoGQL/[Dd]ebugPublic/
+PlayerInfoGQL/[Rr]elease/
+PlayerInfoGQL/[Rr]eleases/
+PlayerInfoGQL/x64/
+PlayerInfoGQL/x86/
+PlayerInfoGQL/[Aa][Rr][Mm]/
+PlayerInfoGQL/[Aa][Rr][Mm]64/
+PlayerInfoGQL/bld/
+PlayerInfoGQL/[Bb]in/
+PlayerInfoGQL/[Oo]bj/
+PlayerInfoGQL/[Ll]og/
+PlayerInfoGQL/[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
