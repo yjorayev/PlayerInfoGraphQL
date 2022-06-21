@@ -6,10 +6,10 @@ namespace PlayerInfoGQL.Models
 
         public int PlayerId { get; set; }
 
-        public string Type { get; set; }
+        public string Type { get; set; } = default!;
 
-        public string Text { get; set; }
+        public string Text { get; set; } = default!;
 
-        public Player Player { get; set; }
+        public Player Player { get; set; } = default!;
     }
 }
