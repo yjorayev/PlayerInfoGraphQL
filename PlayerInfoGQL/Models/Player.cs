@@ -4,15 +4,15 @@ namespace PlayerInfoGQL.Models
     {
         public int Id { get; set; }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = default!;
 
-        public string LastName { get; set; }
+        public string LastName { get; set; } = default!;
 
-        public string Country { get; set; }
+        public string Country { get; set; } = default!;
 
         public int Age { get; set; }
 
-        public string Position { get; set; }
+        public string Position { get; set; } = default!;
 
         public int? PotentialScore { get; set; }
 
@@ -22,10 +22,10 @@ namespace PlayerInfoGQL.Models
 
         public int TeamId { get; set; }
 
-        public string AnalysisResult { get; set; }
+        public string AnalysisResult { get; set; } = default!;
 
         public IEnumerable<Comment> Comments { get; set; } = Enumerable.Empty<Comment>();
 
-        public Team Team { get; set; }
+        public Team Team { get; set; } = default!;
     }
 }

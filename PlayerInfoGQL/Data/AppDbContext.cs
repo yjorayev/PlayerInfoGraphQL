@@ -8,11 +8,11 @@ namespace PlayerInfoGQL.Data
         public AppDbContext(DbContextOptions options) : base(options)
         { }
 
-        public DbSet<Team> Teams { get; set; }
-        public DbSet<Player> Players { get; set; }
-        public DbSet<Comment> Comments { get; set; }
-        public DbSet<CommentType> CommentTypes { get; set; }
-        public DbSet<AnalysisResult> AnalysisResults { get; set; }
+        public DbSet<Team> Teams { get; set; } = default!;
+        public DbSet<Player> Players { get; set; } = default!;
+        public DbSet<Comment> Comments { get; set; } = default!;
+        public DbSet<CommentType> CommentTypes { get; set; } = default!;
+        public DbSet<AnalysisResult> AnalysisResults { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -80,3 +80,5 @@ csx/
 # Microsoft Azure Emulator
 ecf/
 rcf/
+
+PlayerInfoGQL/Data/sqlite3.exe
