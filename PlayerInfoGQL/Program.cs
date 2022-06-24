@@ -1,8 +1,8 @@
 using PlayerInfoGQL.Data;
 using Microsoft.EntityFrameworkCore;
 using PlayerInfoGQL.GraphQL;
-using Microsoft.AspNetCore.Builder;
 using GraphQL.Server.Ui.Voyager;
+using PlayerInfoGQL.GraphQL.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("PlayerInfo");
@@ -10,13 +10,18 @@ var connectionString = builder.Configuration.GetConnectionString("PlayerInfo");
 builder.Services
     .AddPooledDbContextFactory<AppDbContext>(x => x
         .UseSqlite(connectionString)
-        .EnableDetailedErrors()
-        .EnableSensitiveDataLogging());
+        .EnableDetailedErrors());
 
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
-    .AddProjections();
+    .AddType<TeamType>()
+    .AddType<PlayerType>()
+    .AddType<CommentTypeType>()
+    .AddType<CommentType>()
+    .AddType<AnalysisResultType>()
+    .AddFiltering()
+    .AddSorting();
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
