@@ -23,11 +23,6 @@ builder.Services
     .AddFiltering()
     .AddSorting();
 
-builder.Services
-    .AddGraphQLServer()
-    .AddQueryType<Query>()
-    .AddProjections();
-
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
