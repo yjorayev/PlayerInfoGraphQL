@@ -1,0 +1,27 @@
+_id: req_c552bc54402a4f31bfe4877e78617adb
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656216101276
+created: 1655780257193
+url: https://localhost:7280/graphql/
+name: Get Teams Parallel
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\ta: team\t{\n\t\tname\n\t},\n\tb:
+    team\t{\n\t\tname\n\t},\n\tc: team\t{\n\t\tname\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_43b456015e9747ecb43bff8bb7662785
+authentication: {}
+metaSortKey: -1656036049221.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

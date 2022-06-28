@@ -1,0 +1,29 @@
+_id: req_4dd69f5c9175421faf35d521c4170380
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656215952558
+created: 1656035412283
+url: https://localhost:7280/graphql/
+name: Filter Query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\tplayer(\n\t\twhere: {\n\t\t\tand:[\n\t\t\t\t{team:
+    {name: {eq: \"Manchester United\"}}},\n\t\t\t\t{comments: {some: {text:
+    {contains: \"Awesome\"}}}}\n\t\t\t]  },\n\t\torder: {firstName:
+    DESC})\n\t{\n\t\tfirstName,\n\t\tlastName,\n\t\tcomments{\n\t\t\ttext\n\t\t}\n\t}\n\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_45fe48c4e8bb4b7482bf5d309ca221e1
+authentication: {}
+metaSortKey: -1656036049265
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

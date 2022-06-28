@@ -1,0 +1,30 @@
+_id: req_b8b1749333da4b6f86495fcab187f1b3
+type: Request
+parentId: fld_a26401fd967549bb83f65d0fe245c1ac
+modified: 1656450835207
+created: 1656215731327
+url: https://localhost:7280/graphql/
+name: Edit Team
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation {\n\teditTeam(\n\t\tinput: { \n\t\t\tid:
+    9,\n\t\t\tteam: {\n\t\t\t\tid: 9,\n\t\t\t\tname:
+    \"Juventus\",\n\t\t\tcountry: \"Italy\",\n\t\t\tleague: \"Seria
+    A\"\n\t\t\t}\n\t\t\t }\n\t) {\n\t\tteam
+    {\n\t\t\tid\n\t\t\tname\n\t\t\tcountry\n\t\t}\n\t}\n}\n"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2e3fcc29c59c48cda44aed43592380e0
+authentication: {}
+metaSortKey: -1656198521995
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,26 @@
+_id: req_f5bf71f9b57a40c7b529b610d5eefb7a
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656198225469
+created: 1655867947567
+url: https://localhost:7280/graphql/
+name: Analysis Results
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\tanalysisResult{\n\t\tdescription\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a42041306a184e41a233f08324f400ed
+authentication: {}
+metaSortKey: -1656036049240
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

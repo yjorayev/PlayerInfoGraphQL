@@ -1,0 +1,30 @@
+_id: req_20650e5183f94f3395d88ffe449400a3
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656198223151
+created: 1656036049215
+url: https://localhost:7280/graphql/
+name: Get Teams that have players and filter positive comments
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\tteam(\n\t\torder: {country:ASC, name:
+    DESC},\n\t\twhere: {\n\t\t\tand: [\n\t\t\t\t{ players: {any: true}
+    },\n\t\t\t]\n\t\t}\n\t)\n\t{\n\t\tname,\n\t\tcountry,\n\t\tplayers\n\t\t{\n\t\t\tfirstName,\n\t\t\tlastName,\n\t\t\tcomments(\n\t\t\t\twhere:
+    {type: {eq:
+    \"Positive\"}}\n\t\t\t){\n\t\t\t\ttext,\n\t\t\t\ttype,\n\t\t\t}\n\t\t}\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f0519456dcb74622bfaf98cb2d6109bb
+authentication: {}
+metaSortKey: -1656036049215
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

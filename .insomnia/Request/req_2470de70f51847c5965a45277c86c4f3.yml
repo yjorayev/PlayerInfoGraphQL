@@ -1,0 +1,28 @@
+_id: req_2470de70f51847c5965a45277c86c4f3
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656216093166
+created: 1655779082981
+url: https://localhost:7280/graphql/
+name: Get Teams
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\tteam(where: {name:{eq: \"Juventus\"}
+    }){\n\t\tid,\n\t\tname,\n\t\tcountry,\n\t\tleague\n\t\tplayers{\n\t\t
+    firstName,\n\t\t\tlastName\n\t\t}\n\t}\n}\n"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_43b456015e9747ecb43bff8bb7662785
+authentication: {}
+metaSortKey: -1656036049233.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

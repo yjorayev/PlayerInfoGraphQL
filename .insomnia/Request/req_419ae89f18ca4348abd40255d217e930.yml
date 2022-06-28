@@ -1,0 +1,26 @@
+_id: req_419ae89f18ca4348abd40255d217e930
+type: Request
+parentId: fld_056ea580de3c40b399fff9ac104c4ba3
+modified: 1656198226393
+created: 1655866499625
+url: https://localhost:7280/graphql/
+name: Get Players
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query{\n\tplayer\n\t{\n\t\tid,\n\t\tfirstName,\n\t\tlastName,\n\t\tteam{\n\t\t\tname\n\t\t},\n\t\tanalysisResult,\n\t\tcomments{\n\t\t\ttype,\n\t\t\ttext\n\t\t}\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_53ee129032ea4c75a6f0dc425718f080
+authentication: {}
+metaSortKey: -1656036049227.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

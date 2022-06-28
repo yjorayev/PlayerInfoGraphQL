@@ -1,0 +1,29 @@
+_id: req_1328a4a46fd74dabadb37ed299592e72
+type: Request
+parentId: fld_a26401fd967549bb83f65d0fe245c1ac
+modified: 1656216112378
+created: 1656198358549
+url: https://localhost:7280/graphql/
+name: Add Team
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation {\n\taddTeam(input: \n\t\t{ \n\t\t\tname:
+    \"Juventus\",\n\t\t\tcountry: \"Italy\",\n\t\t\tleague: \"Seria A\" \n\t\t})
+    {\n\t\tteam
+    {\n\t\t\tid\n\t\t\tname\n\t\t\tcountry\n\t\t\tleague\n\t\t}\n\t}\n}\n"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_fd0b8c9675fa47acb2d54d4d3979772b
+authentication: {}
+metaSortKey: -1656198521945
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
