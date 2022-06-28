@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PlayerInfoGQL.GraphQL;
 using GraphQL.Server.Ui.Voyager;
 using PlayerInfoGQL.GraphQL.Types;
+using PlayerInfoGQL.GraphQL.Teams;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("PlayerInfo");
@@ -15,6 +16,7 @@ builder.Services
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddMutationType<Mutation>()
     .AddType<TeamType>()
     .AddType<PlayerType>()
     .AddType<CommentTypeType>()
