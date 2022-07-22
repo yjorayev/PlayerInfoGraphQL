@@ -1,4 +1,6 @@
+using HotChocolate.Subscriptions;
 using PlayerInfoGQL.Data;
+using PlayerInfoGQL.GraphQL.Comments;
 using PlayerInfoGQL.GraphQL.Teams;
 using PlayerInfoGQL.Models;
 
@@ -32,6 +34,28 @@ namespace PlayerInfoGQL.GraphQL
 
             await context.SaveChangesAsync();
             return new AddTeamPayload(team);
+        }
+
+        [UseDbContext(typeof(AppDbContext))]
+        public async Task<AddCommentPayload> AddCommentAsync(
+            AddCommentInput input,
+            [ScopedService] AppDbContext context,
+            [Service] ITopicEventSender eventSender,
+            CancellationToken cancellationToken)
+        {
+            var comment = new Comment
+            {
+                PlayerId = input.PlayerId,
+                Type = input.CommentType,
+                Text = input.Text
+            };
+
+            context.Comments.Add(comment);
+            await context.SaveChangesAsync(cancellationToken);
+
+            await eventSender.SendAsync(nameof(Subscription.OnCommentAdded), comment, cancellationToken);
+
+            return new AddCommentPayload(comment);
         }
     }
 }

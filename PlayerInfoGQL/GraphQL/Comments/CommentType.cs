@@ -1,7 +1,7 @@
 using PlayerInfoGQL.Data;
 using PlayerInfoGQL.Models;
 
-namespace PlayerInfoGQL.GraphQL.Types
+namespace PlayerInfoGQL.GraphQL.Comments
 {
     public class CommentType : ObjectType<Comment>
     {

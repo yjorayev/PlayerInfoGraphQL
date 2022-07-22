@@ -96,6 +96,7 @@ namespace PlayerInfoGQL.Data
             #region CommentType
             modelBuilder.Entity<CommentType>()
                 .Property(ct => ct.Description)
+                .HasConversion<string>()
                 .IsRequired();
             #endregion
 
