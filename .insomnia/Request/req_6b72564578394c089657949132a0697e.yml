@@ -1,0 +1,28 @@
+_id: req_6b72564578394c089657949132a0697e
+type: Request
+parentId: fld_a26401fd967549bb83f65d0fe245c1ac
+modified: 1658460128931
+created: 1658458788851
+url: "https://localhost:7280/graphql/ "
+name: Add Comment
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation{\n\taddComment(input: {\n\t\tplayerId:
+    3,\n\t\tcommentType: POSITIVE,\n\t\ttext: \"Good awareness of the
+    field\"\n\t}){\n\t\tcomment{\n\t\t\tplayerId,\n\t\t\ttype,\n\t\t\ttext,\n\t\t\tid,\n\t\t\tplayer{\n\t\t\t\tfirstName,\n\t\t\t\tlastName,\n\t\t\t\tteam{\n\t\t\t\t\tname\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_00a17559b6ee4bd4b3469177b4f78e77
+authentication: {}
+metaSortKey: -1656198522045
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
